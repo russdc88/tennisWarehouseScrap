@@ -1,0 +1,27 @@
+{
+  "name": "tenniswarehousescrap",
+  "version": "1.0.0",
+  "description": "Doing a scraping method to grab all tennis racquets with specific traits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russdc88/tennisWarehouseScrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russdc88/tennisWarehouseScrap/issues"
+  },
+  "homepage": "https://github.com/russdc88/tennisWarehouseScrap#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1"
+  }
+}

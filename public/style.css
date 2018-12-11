@@ -1,0 +1,30 @@
+
+.top-heading {
+
+	color: #EAECEF;
+	background-color: #144474;
+}
+
+.btn {
+	color: #EAECEF;
+	background-color: #F36D2F;
+}
+
+.tennisPic {
+	margin-left: 25%;
+	margin-right: auto;
+	width: 80px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .tennisPic {
+		display: block;
+  	margin-left: auto;
+		margin-right: auto;	
+		margin-bottom: 5%;
+	}
+	.content {
+		text-align: center;
+	}
+}
