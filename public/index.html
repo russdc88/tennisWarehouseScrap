@@ -5,12 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Racquet Finder</title>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 
-	 <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./style.css">
 
 	<!-- Bootstrap Javascript -->
 
@@ -30,21 +39,21 @@
 		<p>Search for a racquest based on the certain brand!</p>
 
 		<form class=" my-2 my-lg-0">
-      <input class="form-control mr-sm-2 searchInput" type="search" placeholder="Brand name" aria-label="Search">
-      <button class="btn searchButton btn-outline-success mt-4" type="submit">Search</button>
-		</form>	
+			<input class="form-control mr-sm-2 searchInput" type="search" placeholder="Brand name" aria-label="Search">
+			<button class="btn searchButton btn-outline-success mt-4" type="submit">Search</button>
+		</form>
 
 		<p class="pt-3">Search by:</p>
 
 		<button class="btn descending btn-outline-success mt-1" type="submit" id="headSize">Racquet Size</button>
 
 		<button class="btn descending btn-outline-success mt-1" id="racLength" type="submit">Racquet Length</button>
-		
+
 		<button class="btn  descending btn-outline-success mt-1" id="swingWeight" type="submit">Swing Weight</button>
-		
+
 	</div>
 	<div class="container-fluid tennisList">
-		
+
 		<!-- where data will go from mongoDB -->
 
 	</div>
@@ -54,9 +63,7 @@
 
 </html>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
 
 <script src="./app.js"></script>

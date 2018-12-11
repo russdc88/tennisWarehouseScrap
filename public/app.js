@@ -38,42 +38,42 @@ function getRacketinfo(data) {
 
 $.getJSON("/racquets", function (data) {
 
-getRacketinfo(data)
+	getRacketinfo(data)
 
 })
 
-$(document).on("click",".searchButton",function(event){
-event.preventDefault()
+$(document).on("click", ".searchButton", function (event) {
+	event.preventDefault()
 
 	var searchRacquet = $(".searchInput").val()
-	
+
 	$.ajax({
 		method: "GET",
 		url: "/racquets/" + searchRacquet
 	})
-	.then(function(data){
-		$(".searchInput").val("")
-		getRacketinfo(data)
-		console.log(data)
+		.then(function (data) {
+			$(".searchInput").val("")
+			getRacketinfo(data)
+			console.log(data)
 
-	})
+		})
 })
 
-$(document).on("click",".descending",function(event){
+$(document).on("click", ".descending", function (event) {
 	event.preventDefault()
 
-var racCategory = $(this).attr("id")
+	var racCategory = $(this).attr("id")
 
 
 	$.ajax({
 		method: "GET",
 		url: "/sortracquets/" + racCategory
 	})
-	.then(function(data){
-		console.log(data)
-		getRacketinfo(data)
-	
-	})
+		.then(function (data) {
+			console.log(data)
+			getRacketinfo(data)
+
+		})
 })
 
 
